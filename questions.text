@@ -1,0 +1,24 @@
+1. Add a test case that verifies get_current_weather with Celsius Metric and language English
+	1. Validte Status Code
+	2. Insert the response of temperature, feels_like for each city to DB
+	3. verify temperature and feels_like from DB are equal to API response 
+
+2. Add a check that the temperature entered in the database is not the same as the one returned from the response
+
+3. Add a test case that uses Weather Data for Multiple Locations (/group) and uses Celsius Metric and language English 
+	1. Insert the response of temperature, feels_like for each city to DB 
+	2. Create a new column in DB of the average temperature for each city 
+	3. Assert the data that was inserted into DB is equal to the one from the response
+	4. Print the city with the highest average temperature
+
+4. Add the ability to get the API KEY and BASE URL from config.ini
+
+API Doc:
+https://openweathermap.org/current
+
+
+Can do just pip install -r requirements.txt
+Or 
+pip install requests
+pip install pytest
+
