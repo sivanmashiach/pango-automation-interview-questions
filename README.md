@@ -29,17 +29,6 @@
 
    Upon completion, generate a concise report highlighting cities with temperature differences between data obtained from the website and the OpenWeatherMap API.
 
-5. **Mobile Question: City Temperature Discrepancy Analysis**
-
-   - Install Android OpenWeatherMap APK.
-   
-   - Change customize unit will be in Celsius.
-
-   - Execute a comparative temperature analysis for a minimum of 20 cities like you did in question 4
-      
-   - Ensure continuity by utilizing the same database from previous questions.
-
-   Upon completion, generate a concise report highlighting cities with temperature differences between data obtained from the mobile and website and the OpenWeatherMap API.
 
 **API Documentation:** [OpenWeatherMap Current Weather API](https://openweathermap.org/current)
 
