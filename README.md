@@ -19,7 +19,8 @@
 
 4. **Web Question: City Temperature Discrepancy Analysis**
 
-   - Execute a comparative temperature analysis for a minimum of 100 cities using data from both (https://www.timeanddate.com/weather/) and the [OpenWeatherMap API](https://openweathermap.org/current).
+   - Execute a comparative temperature analysis for a minimum of 100 cities using data from both (https://www.timeanddate.com/weather/) and the [OpenWeatherMap API]   
+   Example API Endpoint: `https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}`.
    
    - Identify a relevant API to acquire city names for testing.
    
