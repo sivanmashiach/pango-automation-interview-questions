@@ -1,37 +1,94 @@
-1. **Test Case: Verify `get_current_weather` with Celsius Metric and English Language**
+# Weather API Testing and Analysis Project
 
-   - Validate Status Code.
-   - Insert temperature and feels_like responses for each city into the database.
-   - Verify that temperature and feels_like from the database are equal to the API response.
+## Test Cases
 
-2. **Test Case: Utilize Weather Data for Multiple Cities via City ID Parameter**
+### 1. Verify `get_current_weather` with Celsius Metric and English Language
 
-   Example API Endpoint: `https://api.openweathermap.org/data/2.5/weather?id={city id}&appid={API key}`
+- Validate Status Code.
+- Insert temperature and feels_like responses for each city into the database.
+- Verify that temperature and feels_like from the database match the API response.
 
-   - Insert temperature and feels_like responses for each city into the database.
-   - Create a new database column for the average temperature of each city.
-   - Assert that the data inserted into the database is equal to the API response.
-   - Print the city with the highest average temperature.
+### 2. Utilize Weather Data for Multiple Cities via City ID Parameter
 
-3. **Enhancement: Dynamic API Key and Base URL Configuration**
+Example API Endpoint:
 
-   - Implement the ability to retrieve the API KEY and BASE URL from `config.ini` for API calls.
+```
+https://api.openweathermap.org/data/2.5/weather?id={city id}&appid={API key}
+```
 
-4. **Web Question: City Temperature Discrepancy Analysis**
+- Insert temperature and feels_like responses for each city into the database.
+- Create a new database column for the average temperature of each city.
+- Assert that data inserted into the database matches the API response.
+- Print the city with the highest average temperature.
 
-   - Execute a comparative temperature analysis for a minimum of 100 cities using data from both (https://www.timeanddate.com/weather/) and the [OpenWeatherMap API]   
-   Example API Endpoint: `https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}`.
-   
-   - Identify a relevant API to acquire city names for testing.
-   
-   - Employ Selenium to extract temperature data from the specified website.
-   
-   - Ensure continuity by utilizing the same database from previous questions.
+### 3. Dynamic API Key and Base URL Configuration
 
-   Upon completion, generate a concise report highlighting cities with temperature differences between data obtained from the website and the OpenWeatherMap API.
+- Implement configuration management to dynamically retrieve the API KEY and BASE URL from `config.ini` for API calls.
 
+### 4. Web Question: City Temperature Discrepancy Analysis
 
-**API Documentation:** [OpenWeatherMap Current Weather API](https://openweathermap.org/current)
+- Conduct comparative temperature analysis for at least 100 cities using:
+  - [timeanddate.com](https://www.timeanddate.com/weather/)
+  - [OpenWeatherMap API](https://openweathermap.org/current)
 
-**Installation:**
-- Run either `pip install -r requirements.txt` or individually install required packages with `pip install requests pytest`.
+Example API Endpoint:
+
+```
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+```
+
+- Identify an appropriate API to obtain city names for testing.
+- Employ Selenium for extracting temperature data from the website.
+- Use the existing database from previous tasks for data consistency.
+
+Upon completion, generate a concise report highlighting cities with notable temperature discrepancies between the sources.
+
+---
+
+## Installation
+
+- Install dependencies:
+
+```bash
+pip install -r requirements.txt
+# OR individually:
+pip install requests pytest selenium
+```
+
+---
+
+## Project Enhancement Tasks - Advanced Implementation (Required)
+
+You must implement at least **three** of the following enhancements:
+
+- **Smarter Error Handling:**
+  - Implement predictive error detection using AI-driven anomaly detection. Include tests demonstrating proactive error identification.
+
+- **Intelligent Logging:**
+  - Upgrade logs with AI-based analysis to automatically highlight trends, anomalies, and insights, making debugging and monitoring more effective.
+
+- **Dynamic Test Data:**
+  - Generate adaptive, scenario-based test data dynamically to ensure comprehensive test coverage and adaptability.
+
+- **Evolving Data Storage:**
+  - Extend the database to include historical weather data. Implement analytical queries or visualizations to derive valuable insights from historical trends.
+
+- **Adaptive Web Scraping:**
+  - Enhance scraper robustness with adaptive scraping techniques capable of dynamically adjusting to changes in website structure.
+
+- **Insightful Reporting:**
+  - Present analysis results through interactive and visually engaging dashboards powered by AI-driven insights and visualization techniques.
+
+- **Event-Driven Messaging:**
+  - Integrate event-driven architecture to efficiently handle asynchronous data updates and notifications.
+
+- **Support different types of CI/CD:**
+  - Integrate CI/CD pipelines such as Bitbucket Pipelines and GitHub Actions to streamline automated testing and deployment.
+
+---
+
+## Time and Submission
+
+- This home task is expected to take approximately **2 hours**.
+- Your responses and completed tasks must be submitted via a GitHub project repository.
+
