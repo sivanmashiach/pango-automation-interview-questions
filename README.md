@@ -2,13 +2,8 @@
 
 ## Test Cases
 
-### 1. Verify `get_current_weather` with Celsius Metric and English Language
 
-- Validate Status Code.
-- Insert temperature and feels_like responses for each city into the database.
-- Verify that temperature and feels_like from the database match the API response.
-
-### 2. Utilize Weather Data for Multiple Cities via City ID Parameter
+### 1. Utilize Weather Data for Multiple Cities via City ID Parameter
 
 Example API Endpoint:
 
@@ -21,13 +16,13 @@ https://api.openweathermap.org/data/2.5/weather?id={city id}&appid={API key}
 - Assert that data inserted into the database matches the API response.
 - Print the city with the highest average temperature.
 
-### 3. Dynamic API Key and Base URL Configuration
+### 2. Dynamic API Key and Base URL Configuration
 
 - Implement configuration management to dynamically retrieve the API KEY and BASE URL from `config.ini` for API calls.
 
-### 4. Web Question: City Temperature Discrepancy Analysis
+### 3. Web Question: City Temperature Discrepancy Analysis
 
-- Conduct comparative temperature analysis for at least 100 cities using:
+- Conduct comparative temperature analysis for at least 20 cities using:
   - [timeanddate.com](https://www.timeanddate.com/weather/)
   - [OpenWeatherMap API](https://openweathermap.org/current)
 
@@ -59,7 +54,7 @@ pip install requests pytest selenium
 
 ## Project Enhancement Tasks - Advanced Implementation (Required)
 
-You must implement at least **three** of the following enhancements:
+You must implement at least **two** of the following enhancements:
 
 - **Smarter Error Handling:**
   - Implement predictive error detection using AI-driven anomaly detection. Include tests demonstrating proactive error identification.
