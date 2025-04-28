@@ -1,0 +1,22 @@
+cities = [
+    'Accra',
+    'Addis Ababa',
+    'Adelaide',
+    'Algiers',
+    'Almaty',
+    'Amman',
+    'Amsterdam',
+    'Anadyr',
+    'Anchorage',
+    'Ankara',
+    'Antananarivo',
+    'Asuncion',
+    'Athens',
+    'Atlanta',
+    'Auckland',
+    'Baghdad',
+    'Bangkok',
+    'Barcelona',
+    'Beijing',
+    'Beirut'
+]

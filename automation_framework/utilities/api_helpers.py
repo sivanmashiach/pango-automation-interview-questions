@@ -1,12 +1,13 @@
 import requests
 
+from automation_framework.utilities.config_helpers import get_api_key, get_base_url
+
+
 class ApiHelper:
-    BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
-    API_KEY = "f88d54cd8eddb5d1f23ff82a80b95fec"
-    
+    BASE_URL = get_base_url()
+    API_KEY = get_api_key()
+
     def get_current_weather(self, city):
-        url = f"{self.BASE_URL}?q={city}&appid={self.API_KEY}"
-        print(url)
+        url = f"{self.BASE_URL}?q={city}&appid={self.API_KEY}&units=metric"
         response = requests.get(url)
-        print(response)
-        return response
+        return response.json()
